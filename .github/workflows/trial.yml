@@ -28,6 +28,5 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: deploy tomcat
-      run: curl -v -u admin:admin -T /home/runner/work/hello-world/hello-world/webapp/target/webapp.war 
-'http://ec2-54-209-69-185.compute-1.amazonaws.com:8080/manager/text/deploy?path=/myweb_dev_action&update=true'
+      run: curl -v -u admin:admin -T /home/runner/work/hello-world/hello-world/webapp/target/webapp.war 'http://ec2-54-209-69-185.compute-1.amazonaws.com:8080/manager/text/deploy?path=/myweb_dev_action&update=true'
 
